@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="containter">
+        <div id="user-strings">
+            <div class="box" id="string-title">
+                <h1>Username Strings</h1>
+            </div>            
+            <div class="boxes1">
+                <div id="all-strings" class="box">
+                    <h3>Get a list of all username strings!</h3>
+                    <br><hr>
+                    <button id="get-all-user-strings-btn" class="submit">Click Me!</button>
+                    <hr>
+                    <div class="content" id="all-strings-content"></div>
+                </div>        
+                <div id="get-user-string-by-id" class="box">
+                    <h3>Get username string by ID!</h3>            
+                    <label for="user-string-id">String ID:</label>
+                    <input type="text" id="user-string-id">
+                    <hr>
+                    <button id="get-string-by-id-btn" class="submit">Submit</button>    
+                    <hr>     
+                    <div class="content" id="get-string-by-id-content"></div>         
+                </div>
+                <div id="post-string" class="box">
+                    <h3>Add a username to the list!</h3>            
+                    <label for="post-string">Username:</label>
+                    <input type="text" id="post-string-input">
+                    <hr>
+                    <button id="post-string-btn" class="submit">Submit</button>    
+                    <hr>        
+                    <div class="content" id="add-username-string-content"></div>
+                </div>
+                <div id="delete-string" class="box">
+                    <h3>Delete a username string from the list!</h3>            
+                    <label for="delete-string-id">String Id:</label>
+                    <input type="text" id="delete-string-id">
+                    <hr>
+                    <button id="delete-string-btn" class="submit">Submit</button> 
+                    <hr>           
+                    <div class="content" id="string-delete-content"></div>
+                </div>
+            </div>
+            </div>
+
+        <div id="users">
+            <div class="box" id="users-title">
+                <h1>Users</h1>
+            </div>
+        </div>
+        <div class="boxes2">
+            <div id="all-users" class="box">
+                <h3>Get a list of all users!</h3>
+                <br>
+                <br>
+                <br>
+                <hr>
+                <button id="get-all-users-btn" class="submit">Click Me!</button>
+                <hr>
+                <div class="content" id="all-users-content">
+                    <table id="all-users-table" align="center">
+                        <thead id="all-users-thead"></thead>
+                        <tbody id="all-users-tbody"></tbody>
+                    </table>
+                </div>              
+            </div>
+            <div id="post-users" class="box">
+                <h3>Add a user to the list!</h3>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name">
+                <br>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name">
+                <br>
+                <label for="user-id">User Id:</label>
+                <input type="text" id="user-id">
+                <hr>
+                <button id="post-user-submit-btn" class="submit">Submit</button>
+                <hr>
+                <div class="content" id="post-users-content"></div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
